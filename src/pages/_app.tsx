@@ -1,13 +1,10 @@
-import '../styles/global.css'
-
-import {ChgallengesProvider} from '../contexts/ChallengesContext'
-import { CountdownProvider } from '../contexts/CountdownContext'
+import '../styles/global.css';
 
 function MyApp({ Component, pageProps }) {
-  return ( 
-            <ChgallengesProvider>
-                <Component {...pageProps } />
-            </ChgallengesProvider> )
+
+  return (
+      <Component {...pageProps} />
+  );
 }
 
 export default MyApp
